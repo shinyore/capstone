@@ -28,12 +28,75 @@
   </header>
 
   <section class="hero">
-    <div class="container">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="bg-slide bg1"></div>
+      <div class="bg-slide bg2"></div>
+      <div class="bg-slide bg3"></div>
+      <div class="bg-slide bg4"></div>
+    </div>
+    <div class="container hero-content">
       <h1>Member Resources</h1>
       <p>Access your benefits, find doctors, and manage your health easily.</p>
-      <a href="#" class="btn">Login to Portal</a>
+      <a href="#portal" class="btn">Login to Portal</a>
     </div>
   </section>
+
+  <main>
+    <section class="resources">
+      <div class="container">
+        <h2>Quick Links</h2>
+        <div class="resources-grid">
+          <div class="resource-card">
+            <div class="resource-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <rect x="3" y="4" width="18" height="16" rx="2"/>
+                <path d="M7 8h10M7 12h10M7 16h6"/>
+              </svg>
+            </div>
+            <h3>Download ID card</h3>
+            <p class="resource-desc">Instantly download your digital ID card to present at appointments.</p>
+            <a href="#" class="resource-link">Download <span class="arrow">→</span></a>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="9" y1="15" x2="15" y2="15"/>
+              </svg>
+            </div>
+            <h3>View claims</h3>
+            <p class="resource-desc">View recent claims and explanations of benefits in one place.</p>
+            <a href="#" class="resource-link">View claims <span class="arrow">→</span></a>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </div>
+            <h3>Billing & payments</h3>
+            <p class="resource-desc">Manage your billing, payment methods, and view statements.</p>
+            <a href="#" class="resource-link">Pay now <span class="arrow">→</span></a>
+          </div>
+        </div>
+
+        <h3>Member FAQs</h3>
+        <details>
+          <summary>How do I get an ID card?</summary>
+          <p>Sign in to your member portal and select 'ID card' to download a PDF.</p>
+        </details>
+
+        <details>
+          <summary>How do I view my claims?</summary>
+          <p>Claims are updated within 3–5 business days after services are processed.</p>
+        </details>
+
+      </div>
+    </section>
+  </main>
 
   <footer>
     <div class="container">

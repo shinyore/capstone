@@ -28,12 +28,107 @@
   </header>
 
   <section class="hero">
-    <div class="container">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="bg-slide bg1"></div>
+      <div class="bg-slide bg2"></div>
+      <div class="bg-slide bg3"></div>
+      <div class="bg-slide bg4"></div>
+    </div>
+    <div class="container hero-content">
       <h1>Contact Us</h1>
-      <p>We’re here to help! Reach out for support, quotes, or partnership inquiries.</p>
+      <p>We're here to help! Reach out for support, quotes, or partnership inquiries.</p>
       <a href="mailto:support@myhealthcare.com" class="btn">Email Us</a>
     </div>
   </section>
+
+  <main>
+    <section class="contact-form">
+      <div class="container">
+        <h2>Get in touch</h2>
+
+        <!-- Realistic contact form (no JS) -->
+        <form action="mailto:support@myhealthcare.com" method="post" enctype="text/plain" class="contact-compact">
+          <div class="form-row">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" placeholder="Jane Doe" required>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" placeholder="(555) 555-0123" pattern="[0-9()\-\s+]+">
+          </div>
+
+          <div class="form-row">
+            <label for="member">Member ID (if you have one)</label>
+            <input id="member" name="member" type="text" placeholder="ABC123456" aria-describedby="member-help">
+            <small id="member-help">Optional — helps us find your account faster.</small>
+          </div>
+
+          <div class="form-row">
+            <label for="reason">Reason for contacting</label>
+            <select id="reason" name="reason" required>
+              <option value="">Choose a reason</option>
+              <option>Enroll / Plan questions</option>
+              <option>Billing / Payments</option>
+              <option>Find a provider</option>
+              <option>Claims</option>
+              <option>Technical support</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <fieldset class="form-row">
+            <legend>Preferred contact method</legend>
+            <label><input type="radio" name="preferred" value="email" checked> Email</label>
+            <label><input type="radio" name="preferred" value="phone"> Phone</label>
+          </fieldset>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Brief description of your request" required></textarea>
+          </div>
+
+          <div class="form-row">
+            <label><input type="checkbox" name="consent" required> I consent to be contacted about this request and agree to the <a href="privacy.html">privacy policy</a>.</label>
+          </div>
+
+          <div class="form-row">
+            <button type="submit" class="btn">Send request</button>
+            <p class="muted">Typical response: 1–2 business days. For urgent medical issues call your clinic or 911.</p>
+          </div>
+        </form>
+
+        <aside class="contact-channels">
+          <h3>Other ways to reach us</h3>
+          <ul>
+            <li><strong>Phone (Member Support):</strong> (555) 123-4567 — Mon–Fri, 8am–6pm</li>
+            <li><strong>Employer / Sales:</strong> sales@myhealthcare.com</li>
+            <li><strong>Provider relations:</strong> providers@myhealthcare.com</li>
+            <li><strong>Billing:</strong> billing@myhealthcare.com</li>
+          </ul>
+
+          <h4>Clinic locations</h4>
+          <details>
+            <summary>Main Clinic — 123 Health Ave</summary>
+            <p>Hours: Mon–Fri, 8am–6pm — Phone: (555) 123-4567<br>Walk-ins welcome for urgent concerns; scheduled visits preferred.</p>
+          </details>
+
+          <details>
+            <summary>Northside Clinic — 456 Wellness Blvd</summary>
+            <p>Hours: Mon–Sat, 9am–5pm — Phone: (555) 987-6543<br>Available services: primary care, pediatrics, telehealth.</p>
+          </details>
+
+          <p class="muted">If this is a medical emergency, call 911 or go to your nearest emergency room.</p>
+        </aside>
+
+      </div>
+    </section>
+  </main>
 
   <footer>
     <div class="container">

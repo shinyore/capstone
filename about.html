@@ -28,11 +28,153 @@
   </header>
 
   <section class="hero">
-    <div class="container">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="bg-slide bg1"></div>
+      <div class="bg-slide bg2"></div>
+      <div class="bg-slide bg3"></div>
+      <div class="bg-slide bg4"></div>
+    </div>
+    <div class="container hero-content">
       <h1>About Us</h1>
-      <p>We’re on a mission to simplify healthcare and make it accessible for everyone.</p>
+      <p>We're on a mission to simplify healthcare and make it accessible for everyone.</p>
     </div>
   </section>
+
+  <main>
+    <section class="about-content">
+      <div class="container">
+        <div class="about-cards-grid">
+          <div class="about-card mission-card">
+            <div class="about-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <h2>Our Mission</h2>
+            <p>Care4You exists to make high-quality healthcare clear and affordable. We focus on preventive services, transparent pricing, and member-first support.</p>
+            <div class="card-accent"></div>
+          </div>
+
+          <div class="about-card story-card">
+            <div class="about-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              </svg>
+            </div>
+            <h2>Our Story</h2>
+            <p>Founded by clinicians and technologists, Care4You started with a simple idea: simplify access to primary care and make costs predictable for families and small businesses.</p>
+            <div class="card-accent"></div>
+          </div>
+        </div>
+
+        <div class="values-section">
+          <div class="values-card">
+            <div class="values-header">
+              <div class="values-icon">
+                <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+              </div>
+              <h2>Our Values</h2>
+            </div>
+            <div class="values-grid">
+              <div class="value-item">
+                <div class="value-icon-small">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 16v-4M12 8h.01"/>
+                  </svg>
+                </div>
+                <h3>Transparency</h3>
+                <p>Clear plans and no surprise bills.</p>
+              </div>
+              <div class="value-item">
+                <div class="value-icon-small">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                  </svg>
+                </div>
+                <h3>Compassion</h3>
+                <p>Patient-centered care at every touchpoint.</p>
+              </div>
+              <div class="value-item">
+                <div class="value-icon-small">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                    <line x1="9" y1="9" x2="9.01" y2="9"/>
+                    <line x1="15" y1="9" x2="15.01" y2="9"/>
+                  </svg>
+                </div>
+                <h3>Community</h3>
+                <p>Partnering with local clinics to serve neighborhoods.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Member setup section -->
+    <section class="setup">
+      <div class="container">
+        <h2 class="section-title">Get Started with Care4You</h2>
+        <p class="section-subtitle">Already a member or new to Care4You? Let's make sure you're set up for success.</p>
+
+        <div class="setup-grid">
+          <div class="setup-card">
+            <div class="setup-icon-gradient" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <h3>Access your account</h3>
+            <p>Connect with the Care Team, talk to a provider, and find care — all in one place</p>
+            <a href="members.html" class="setup-link">Activate your account →</a>
+          </div>
+
+          <div class="setup-card">
+            <div class="setup-icon-gradient" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                <line x1="1" y1="10" x2="23" y2="10"/>
+              </svg>
+            </div>
+            <h3>Pay seamlessly</h3>
+            <p>Pay your monthly premium with autopay and keep your plan running smoothly</p>
+            <a href="contact.html" class="setup-link">Turn on autopay →</a>
+          </div>
+
+          <div class="setup-card">
+            <div class="setup-icon-gradient" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3>Find great doctors</h3>
+            <p>Discover virtual or local providers who meet your needs and accept your plan</p>
+            <a href="team.html" class="setup-link">Search our network →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta-card">
+          <h2>Ready to find the right plan?</h2>
+          <p>Compare our flexible healthcare plans and find the perfect fit for you and your family.</p>
+          <a href="plans.html" class="btn btn-large">Compare Plans →</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <div class="container">

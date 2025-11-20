@@ -16,14 +16,14 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1.25rem; /* larger horizontal gutter like reference */
+  padding: 0 1.25rem;
 }
 
 
 header {
   background: white;
   box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-  padding: 0.75rem 0; /* increased vertical padding */
+  padding: 0.75rem 0;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -38,13 +38,13 @@ header .container {
   margin: 0 auto;
 }
 
-/* logo: remove large negative offset and keep it visually near the left gutter */
+
 .logo-link {
   display: flex;
   align-items: center;
   text-decoration: none;
   padding-left: 0;
-  margin-left: 0; /* reset to align with container gutter */
+  margin-left: 0;
 }
 
 .logo-link img {
@@ -80,7 +80,7 @@ nav a {
   text-decoration: none;
   color: #333;
   font-weight: 600;
-  padding: 0.5rem 0.25rem; /* increase touch target vertically */
+  padding: 0.5rem 0.25rem;
   transition: color 0.2s ease, transform 0.15s ease;
 }
 
@@ -99,7 +99,7 @@ header .container {
 
 .hero {
   text-align: center;
-  padding: 5.5rem 1rem; /* roomy hero */
+  padding: 5.5rem 1rem;
   background: linear-gradient(135deg, #e6f0ff, #ffffff);
   min-height: 420px;
   display: flex;
@@ -108,7 +108,7 @@ header .container {
   overflow: hidden;
 }
 
-/* CSS-only hero background slider */
+
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -188,9 +188,6 @@ header .container {
 }
 
 
-/* Interactive microinteractions */
-
-/* subtle lift on cards */
 .feature, .plan-card, .doctor-card, .testimonial-grid blockquote {
   transition: transform 240ms cubic-bezier(.2,.9,.2,1), box-shadow 240ms ease, opacity 180ms ease;
 }
@@ -199,7 +196,7 @@ header .container {
   box-shadow: 0 8px 24px rgba(12,35,80,0.12);
 }
 
-/* button pulse and shadow on hover */
+
 .btn {
   position: relative;
   transition: transform 160ms ease, box-shadow 160ms ease, opacity 120ms ease;
@@ -220,7 +217,7 @@ header .container {
 }
 .btn:hover::after { opacity: 1; transform: scale(1); }
 
-/* nav underline animation */
+
 nav a { position: relative; }
 nav a::after {
   content: '';
@@ -237,10 +234,10 @@ nav a::after {
 }
 nav a:hover::after, nav a.active::after { transform: scaleX(1); }
 
-/* focus-visible for accessibility */
+
 :focus-visible { outline: 3px solid rgba(0,102,255,0.14); outline-offset: 2px; }
 
-/* details/summary accordion styling */
+
 details {
   background: #fff;
   border-radius: 8px;
@@ -264,15 +261,15 @@ summary {
 .compare-table thead th { font-weight: 700; color: #00388f; }
 .compare-table tbody tr:nth-child(odd) { background: #fbfcff; }
 
-/* contact details styling */
+
 details p { margin: 0.5rem 0 0; color: #444; }
 
-/* global section spacing to match reference rhythm */
+
 section {
   padding: 3.5rem 0;
 }
 
-/* Section titles */
+
 .section-title {
   text-align: center;
   font-size: 2.5rem;
@@ -290,7 +287,7 @@ section {
   margin-right: auto;
 }
 
-/* features / cards grid */
+
 .features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -365,7 +362,7 @@ section {
   font-size: 0.95rem;
 }
 
-/* plans grid */
+
 .plans-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -553,7 +550,7 @@ section {
   color: #0052cc;
 }
 
-/* team / doctor grid adjustments */
+
 .team-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -576,7 +573,7 @@ section {
   margin-bottom: 0.75rem;
 }
 
-/* Services Cards Section */
+
 .services-cards {
   background: linear-gradient(to bottom, #f8f9ff, #ffffff);
   padding: 5rem 0;
@@ -725,7 +722,7 @@ section {
   }
 }
 
-/* testimonials */
+
 .testimonial-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -790,13 +787,13 @@ section {
 }
 
 
-/* footer spacing */
+
 footer .container {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-/* About page cards */
+
 .about-content {
   padding: 4rem 0;
 }
@@ -955,7 +952,7 @@ footer .container {
   line-height: 1.6;
 }
 
-/* Member setup section */
+
 .setup {
   padding: 5rem 0;
   background: linear-gradient(to bottom, #f8f9ff, #ffffff);
@@ -1033,7 +1030,7 @@ footer .container {
   transform: translateX(4px);
 }
 
-/* CTA section */
+
 .cta {
   padding: 5rem 0;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -1067,7 +1064,7 @@ footer .container {
   }
 }
 
-/* members: resources grid */
+
 .resources-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1173,7 +1170,7 @@ footer .container {
   .resources-grid { grid-template-columns: 1fr; gap: 1.5rem; }
 }
 
-/* responsive adjustments */
+
 @media (max-width: 1024px) {
   .features-grid,
   .plans-grid,
@@ -1204,7 +1201,6 @@ footer .container {
   .hero p { font-size: 1rem; }
 }
 
-/* contact form styles */
 .contact-form .container {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -1212,15 +1208,15 @@ footer .container {
 
 .contact-compact {
   display: grid;
-  grid-template-columns: 1fr 360px; /* main form + aside */
-  gap: 2rem; /* more breathing room */
+  grid-template-columns: 1fr 360px;
+  gap: 2rem;
   align-items: start;
 }
 
 .contact-compact .form-row {
   display: flex;
   flex-direction: column;
-  margin-bottom: 0.85rem; /* consistent vertical rhythm */
+  margin-bottom: 0.85rem;
 }
 
 .contact-compact label { margin-bottom: 0.35rem; }
@@ -1241,7 +1237,7 @@ footer .container {
 
 .contact-compact .muted { margin-top: 0.5rem; }
 
-/* form actions row */
+
 .contact-compact .form-row .btn {
   display: inline-block;
   padding: 0.6rem 1rem;
@@ -1250,7 +1246,7 @@ footer .container {
 
 .contact-compact .form-row { gap: 0.5rem; }
 
-/* Aside / contact channels */
+
 .contact-channels {
   background: #fff;
   padding: 1.25rem;
@@ -1263,7 +1259,7 @@ footer .container {
 .contact-channels li { margin-bottom: 0.6rem; color: #333; }
 .contact-channels li strong { display: inline-block; width: 130px; font-weight: 700; color: #111; }
 
-/* Phone / email callouts as buttons */
+
 .contact-channels .call {
   display: inline-flex;
   align-items: center;
@@ -1278,10 +1274,10 @@ footer .container {
 
 .contact-channels details { margin-bottom: 0.6rem; }
 
-/* ensure details content has breathing room */
+
 .contact-channels details p { margin-top: 0.5rem; margin-bottom: 0; }
 
-/* smaller screens: stack form and aside with comfortable spacing */
+
 @media (max-width: 900px) {
   .contact-compact { grid-template-columns: 1fr; }
   .contact-channels { margin-top: 1rem; }

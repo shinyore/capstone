@@ -189,7 +189,7 @@ header .container {
 
 
 .feature, .plan-card, .doctor-card, .testimonial-grid blockquote {
-  transition: transform 240ms cubic-bezier(.2,.9,.2,1), box-shadow 240ms ease, opacity 180ms ease;
+  transition: transform 240ms ease, box-shadow 240ms ease, opacity 180ms ease;
 }
 .feature:hover, .plan-card:hover, .doctor-card:hover, .testimonial-grid blockquote:hover {
   transform: translateY(-6px);
@@ -303,7 +303,7 @@ section {
   box-shadow: 0 4px 20px rgba(12,35,80,0.08);
   text-align: center;
   border: 1px solid rgba(0,102,255,0.08);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
 }
@@ -341,7 +341,7 @@ section {
   justify-content: center;
   color: white;
   box-shadow: 0 8px 24px rgba(102,126,234,0.3);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s ease;
 }
 
 .feature:hover .feature-icon {
@@ -381,7 +381,7 @@ section {
   justify-content: space-between;
   border: 2px solid transparent;
   position: relative;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s ease;
 }
 
 .plan-card:hover {
@@ -592,7 +592,7 @@ section {
   border-radius: 24px;
   box-shadow: 0 8px 30px rgba(12,35,80,0.1);
   border: 2px solid transparent;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.5s ease;
   position: relative;
   overflow: hidden;
 }
@@ -638,7 +638,7 @@ section {
   justify-content: center;
   color: white;
   box-shadow: 0 8px 24px rgba(102,126,234,0.35);
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.5s ease;
 }
 
 .service-card:hover .service-icon-wrap {
@@ -696,7 +696,7 @@ section {
   border-radius: 12px;
   font-weight: 700;
   font-size: 1.05rem;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s ease;
   box-shadow: 0 4px 15px rgba(102,126,234,0.3);
 }
 
@@ -736,7 +736,7 @@ section {
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(12,35,80,0.08);
   border: 1px solid rgba(0,102,255,0.08);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s ease;
 }
 
 .testimonial-card:hover {
@@ -811,7 +811,7 @@ footer .container {
   border-radius: 20px;
   box-shadow: 0 8px 30px rgba(12,35,80,0.1);
   border: 2px solid transparent;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.5s ease;
   position: relative;
   overflow: hidden;
 }
@@ -848,7 +848,7 @@ footer .container {
   color: white;
   margin-bottom: 2rem;
   box-shadow: 0 8px 24px rgba(102,126,234,0.3);
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.5s ease;
 }
 
 .about-card:hover .about-icon {
@@ -972,7 +972,7 @@ footer .container {
   box-shadow: 0 8px 30px rgba(12,35,80,0.1);
   text-align: center;
   border: 2px solid transparent;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.5s ease;
 }
 
 .setup-card:hover {
@@ -990,7 +990,7 @@ footer .container {
   justify-content: center;
   margin: 0 auto 2rem;
   box-shadow: 0 8px 24px rgba(102,126,234,0.3);
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.5s ease;
 }
 
 .setup-card:hover .setup-icon-gradient {
@@ -1080,7 +1080,7 @@ footer .container {
   text-align: center;
   box-shadow: 0 4px 20px rgba(0,0,0,0.06);
   border: 1px solid rgba(0,102,255,0.08);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
 }
@@ -1116,7 +1116,7 @@ footer .container {
   align-items: center;
   justify-content: center;
   box-shadow: 0 8px 24px rgba(102,126,234,0.25);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s ease;
 }
 
 .resource-card:hover .resource-icon {
